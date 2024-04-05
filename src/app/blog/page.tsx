@@ -11,7 +11,7 @@ export interface PostProps {
 }
 
 // the entry point for all pages in this path
-export default async function Post(props: PostProps) {
+export default async function Page(props: PostProps) {
   const {
     params: { uri },
   } = props;
