@@ -1,0 +1,8 @@
+fragment MediaItem on MediaItem {
+  altText
+  mediaItemUrl
+  mediaDetails {
+    height
+    width
+  }
+}

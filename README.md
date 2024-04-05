@@ -1,6 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# WCV Headless Frontend Demo
 
-## Getting Started
+## Useful Links
+
+[Workshop Slides](https://docs.google.com/presentation/d/1N8XVWZBbwK8mWuUbcqqD4rp9ShBA7mHsRncQfH_P5Ns/edit#slide=id.p) — [WordPress Backend](https://headless.fabiangigler.com) — [GitHub Repo](https://github.com/fabiangigler/wcv-headless-fe)
+
+## Getting Started with Next.js
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 

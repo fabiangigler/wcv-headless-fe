@@ -1,0 +1,38 @@
+query allPages {
+  pages(first: 1000) {
+    nodes {
+      uri
+      slug
+      title
+    }
+  }
+}
+
+query Page($uri: ID!, $idType: PageIdType = URI, $asPreview: Boolean = false) {
+  page(id: $uri, idType: $idType, asPreview: $asPreview) {
+    id
+    databaseId
+    title
+    slug
+    uri
+
+    sections {
+      sections {
+        fieldGroupName
+        ... on SectionsSectionsHeroLayout {
+          fieldGroupName
+          headline
+        }
+        ... on SectionsSectionsTextImageLayout {
+          copy
+          headline
+          image {
+            node {
+              ...MediaItem
+            }
+          }
+        }
+      }
+    }
+  }
+}

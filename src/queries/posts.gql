@@ -1,0 +1,33 @@
+query allPosts {
+  posts(first: 1000) {
+    nodes {
+      uri
+      slug
+      title
+      excerpt
+    }
+  }
+}
+
+query Post($uri: ID!, $idType: PostIdType = URI, $asPreview: Boolean = false) {
+  post(id: $uri, idType: $idType, asPreview: $asPreview) {
+    id
+    databaseId
+    title
+    slug
+    uri
+
+    content
+
+    # template {
+    #   ... on DefaultTemplate {
+    #     templateName
+    #     blocks {
+    #       sections {
+    #         ...PageBlocks
+    #       }
+    #     }
+    #   }
+    # }
+  }
+}
